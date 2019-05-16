@@ -26,6 +26,7 @@ Route::post('/login','User\LoginController@login');          //用户登录
 
 
 //API
+Route::post('/api/user/reg','Api\LoginController@reg'); //用户注册
 Route::get('/api/user/login','Api\LoginController@login'); //用户登录
 
 

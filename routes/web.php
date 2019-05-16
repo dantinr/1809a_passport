@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+//TEST
+Route::get('/test/redis','Test\TestController@testRedis'); //用户登录
 
 
 //用户登录
@@ -26,5 +27,7 @@ Route::post('/login','User\LoginController@login');          //用户登录
 
 //API
 Route::get('/api/user/login','Api\LoginController@login'); //用户登录
+
+
 
 

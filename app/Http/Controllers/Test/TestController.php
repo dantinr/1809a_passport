@@ -24,6 +24,7 @@ class TestController extends Controller
     {
         $key = 'aaaa';
         Redis::set($key,123123);
+        echo Redis::get($key);
     }
 
 }
